@@ -1,0 +1,1 @@
+function a(n="id"){const t=Math.random().toString(36).slice(2,8);return`${n}-${Date.now().toString(36)}-${t}`}function o(){return new Date().toISOString()}function i(n){const t=new Date(n);if(Number.isNaN(t.getTime()))return n;const e=r=>String(r).padStart(2,"0");return`${e(t.getMonth()+1)}-${e(t.getDate())} ${e(t.getHours())}:${e(t.getMinutes())}`}export{i as f,a as g,o as n};

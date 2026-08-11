@@ -1,0 +1,1 @@
+import{U as t}from"./index-BoYTwM2a.js";function r(a){const n=t();return n?n.channels.find(e=>e.id===a)??null:null}function c(){return t()?.channels??[]}function o(a){return a.map(n=>r(n)?.name??n).join(" · ")}export{r as a,o as f,c as g};

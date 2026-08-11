@@ -1,0 +1,1 @@
+import{d as s,c as n,b as a,w as c,h as p,o as r,an as i}from"./index-BoYTwM2a.js";const _={class:"state-panel"},m=s({__name:"EmptyState",props:{description:{}},setup(e){return(t,d)=>{const o=p("el-empty");return r(),n("div",_,[a(o,{description:e.description??"暂无数据"},{default:c(()=>[i(t.$slots,"action")]),_:3},8,["description"])])}}});export{m as _};

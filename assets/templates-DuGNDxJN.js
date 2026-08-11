@@ -1,0 +1,1 @@
+import{ac as t}from"./index-BJAWvLdC.js";async function l(){const a=await t();return{templates:a.templates,scenes:a.template_scenes,styles:a.template_styles,channels:a.channels.map(e=>({id:e.id,label:e.name}))}}async function n(a=4){return(await t()).templates.filter(s=>s.featured).slice(0,a)}export{l as a,n as g};
