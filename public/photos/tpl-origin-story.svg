@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">产地故事模板封面</title>
+  <desc id="desc">大地色背景上的远山、田野与太阳</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7ecd9"/>
+      <stop offset="1" stop-color="#d9b078"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <circle cx="470" cy="110" r="40" fill="#f4c86b"/>
+  <path d="M0 250 L130 132 L235 224 L315 140 L425 242 L600 168 L600 400 L0 400 Z" fill="#a97f4f" opacity="0.85"/>
+  <path d="M0 310 L600 310 L600 400 L0 400 Z" fill="#8fae5a" opacity="0.55"/>
+  <path d="M0 348 L600 348" stroke="#6f9450" stroke-width="6" stroke-dasharray="26 20" opacity="0.7"/>
+  <text x="300" y="375" text-anchor="middle" font-family="&quot;PingFang SC&quot;,&quot;Microsoft YaHei UI&quot;,&quot;Noto Sans CJK SC&quot;,sans-serif" font-size="34" font-weight="700" letter-spacing="8" fill="#5f4224">产地故事</text>
+</svg>

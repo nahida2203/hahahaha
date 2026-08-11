@@ -1,0 +1,57 @@
+# ============================================================
+# 福农AI创 - 应用配置（YAML）
+# 说明：api key 等敏感数据一律使用 AES-256 加密存储，禁止明文。
+# 加密密钥由环境变量 VITE_CRYPTO_KEY 提供（详见 .env 与文档）。
+# ============================================================
+
+# ---- 业务运行参数（动态数据源，禁止在代码中硬编码）----
+settings:
+  quota:
+    # 初始可用额度（点）
+    initial_balance: 688
+    # 单渠道文案版本消耗（点）
+    cost_per_version: 100
+    # 图片生成流程消耗（点）
+    media_cost_image: 20
+    # 视频生成流程消耗（点）
+    media_cost_video: 40
+  storage:
+    # 素材存储总容量（字节，500MB）
+    total_bytes: 524288000
+    # 内置示例素材按固定大小计入存储（字节，2MB/张）
+    sample_asset_size_bytes: 2097152
+
+ai_models:
+  # ---- grok-imagine-image 图像生成模型（经由 sub2api.tegical.com 中转）----
+  grok_image:
+    endpoint: "https://sub2api.tegical.com/v1/images/generations"
+    model: "grok-imagine-image"
+    # AES-256 加密的 API Key（明文以 VITE_CRYPTO_KEY 解密，仅驻留内存）
+    api_key_encrypted: "U2FsdGVkX1+eBfwIpPej5tzNBte/H7Frj/VRI1otD3Y0B2lubIUjwO6aMBtt0k4l1EoQvHo4jjo7MdYq2JOspHySb6jCsu3cFPrlm5t2HnvR7/2R3B5XMGnoFlhewBoJ"
+    # 请求超时（毫秒）
+    timeout_ms: 120000
+    # 最大重试次数（网络抖动 / 5xx / 429 时指数退避重试）
+    max_retries: 3
+    # 首次重试延迟（毫秒），后续按指数递增
+    retry_delay_ms: 500
+    # 是否启用真实模型调用；false 时直接走本地模拟生成
+    enabled: true
+    # 调用失败（重试耗尽）后是否降级到本地模拟，保证演示流程不中断
+    fallback_to_local: true
+
+  # ---- grok-imagine-video 视频生成模型（异步：提交后轮询，经由 sub2api.tegical.com 中转）----
+  grok_video:
+    endpoint: "https://sub2api.tegical.com/v1/videos/generations"
+    # 任务状态查询地址，{id} 会被替换为 request_id
+    poll_endpoint: "https://sub2api.tegical.com/v1/videos/{id}"
+    model: "grok-imagine-video"
+    api_key_encrypted: "U2FsdGVkX1+eBfwIpPej5tzNBte/H7Frj/VRI1otD3Y0B2lubIUjwO6aMBtt0k4l1EoQvHo4jjo7MdYq2JOspHySb6jCsu3cFPrlm5t2HnvR7/2R3B5XMGnoFlhewBoJ"
+    timeout_ms: 120000
+    max_retries: 3
+    retry_delay_ms: 1000
+    # 轮询间隔（毫秒）
+    poll_interval_ms: 3000
+    # 单次生成任务最长等待（毫秒）
+    poll_timeout_ms: 600000
+    enabled: true
+    fallback_to_local: true

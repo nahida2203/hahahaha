@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">品牌故事模板封面</title>
+  <desc id="desc">深绿背景上的金色徽章与叶片</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b4d3b"/>
+      <stop offset="1" stop-color="#168c61"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <circle cx="300" cy="185" r="92" fill="none" stroke="#f4d98a" stroke-width="6" opacity="0.9"/>
+  <circle cx="300" cy="185" r="70" fill="#ffffff" opacity="0.08"/>
+  <path d="M300 128 C 262 146 258 200 300 226 C 342 200 338 146 300 128 Z" fill="#f4d98a"/>
+  <text x="300" y="340" text-anchor="middle" font-family="&quot;PingFang SC&quot;,&quot;Microsoft YaHei UI&quot;,&quot;Noto Sans CJK SC&quot;,sans-serif" font-size="34" font-weight="700" letter-spacing="8" fill="#fdf3dd">品牌故事</text>
+</svg>

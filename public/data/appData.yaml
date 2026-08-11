@@ -1,0 +1,287 @@
+channels:
+  - id: douyin
+    name: 抖音
+    icon: VideoPlay
+    description: 年轻用户聚集，节奏快、互动强
+    copyStyle: 口语化短句 + 钩子开场 + 话题标签，突出卖点与行动号召
+  - id: shipinhao
+    name: 视频号
+    icon: VideoCameraFilled
+    description: 微信生态熟人传播，点赞即社交推荐
+    copyStyle: 真实故事化叙述 + 熟人背书，卖点克制，结尾引导互动
+  - id: pengyouquan
+    name: 朋友圈
+    icon: ChatDotRound
+    description: 私域信任圈，适合图文分享
+    copyStyle: 第一人称体验 + 细节真实，氛围感强，结尾引导私信咨询
+
+template_scenes:
+  - 新品上市
+  - 节日营销
+  - 产地故事
+  - 丰收节
+  - 品牌故事
+
+template_styles:
+  - 清新自然
+  - 大气正式
+  - 年轻潮流
+  - 质朴乡土
+
+templates:
+  - id: tpl-tea-launch
+    title: 福鼎白茶新品上市
+    description: 突出新茶上市、清新口感与首发氛围，适合快速建立新品认知。
+    scene: 新品上市
+    style: 清新自然
+    channelIds: [douyin, shipinhao, pengyouquan]
+    promptExample: 围绕福鼎白茶新品上市，写一组适合抖音和朋友圈发布的短文案：突出“当季新采、口感清甜、产地直发”，语气亲切自然，不含夸大功效的表述。
+    coverUrl: /photos/tea-glass.webp
+    coverAlt: 透明玻璃杯中的冷泡茶饮，新品上市模板预览
+    featured: true
+
+  - id: tpl-festival
+    title: 闽味团圆节日礼
+    description: 围绕节庆赠礼与团聚场景，用福建地方风味打动收礼人。
+    scene: 节日营销
+    style: 大气正式
+    channelIds: [douyin, shipinhao, pengyouquan]
+    promptExample: 结合春节、中秋等节庆团聚场景，为福建特色农产品礼盒生成赠礼文案：体现心意与家乡味，避免虚假稀缺和过度促销。
+    coverUrl: /photos/tea-light.webp
+    coverAlt: 茶园暖光与茶叶实拍，节日营销模板预览
+    featured: true
+
+  - id: tpl-origin-story
+    title: 来自山野的味道
+    description: 用产地环境、种植过程和人物故事建立真实可信的产品印象。
+    scene: 产地故事
+    style: 质朴乡土
+    channelIds: [douyin, shipinhao]
+    promptExample: 从产地环境、生产者与一项真实工序切入，生成有画面感但不夸大的产地故事文案，用于短视频口播与封面标题。
+    coverUrl: /photos/green-plant.webp
+    coverAlt: 茶园绿植与自然光影，产地故事模板预览
+    featured: true
+
+  - id: tpl-harvest
+    title: 丰收季一起尝鲜
+    description: 强化成熟时令、采收现场与限时尝鲜感，适合丰收节点传播。
+    scene: 丰收节
+    style: 年轻潮流
+    channelIds: [douyin, shipinhao, pengyouquan]
+    promptExample: 围绕采收现场、时令口感和产地直发，生成节奏明快的丰收节文案：含短视频开场、字幕要点和朋友圈分享语。
+    coverUrl: /photos/tea-light.webp
+    coverAlt: 茶园晨光中的茶叶实拍，丰收节模板预览
+    featured: true
+
+  - id: tpl-brand-story
+    title: 闽味好物品牌故事
+    description: 从品牌坚持、生产标准与长期价值出发，形成稳定可信的品牌表达。
+    scene: 品牌故事
+    style: 大气正式
+    channelIds: [shipinhao, pengyouquan]
+    promptExample: 提炼品牌起点、品质标准与对消费者的承诺，生成克制可信的品牌故事长文，以及用于视频号与朋友圈的摘要文案。
+    coverUrl: /photos/tea-cup.webp
+    coverAlt: 茶汤与茶杯产品实拍，品牌故事模板预览
+
+  - id: tpl-real-origin
+    title: 镜头里的真实产地
+    description: 用实拍素材记录采摘、加工与发货过程，表达自然质朴。
+    scene: 产地故事
+    style: 质朴乡土
+    channelIds: [douyin, shipinhao]
+    promptExample: 按“环境、人物、工序、成品”顺序组织实拍素材，生成自然口吻的纪实短视频脚本与字幕文案。
+    coverUrl: /photos/green-plant.webp
+    coverAlt: 茶园植物细节实拍，真实产地模板预览
+
+  - id: tpl-quality-detail
+    title: 品质卖点一页说清
+    description: 把核心卖点、规格与品质依据整理成清晰易读的商品内容。
+    scene: 新品上市
+    style: 大气正式
+    channelIds: [shipinhao, pengyouquan]
+    promptExample: 根据产品真实卖点与规格，生成一页式详情文案：结构清楚、信息克制，适合视频号图文与朋友圈长文。
+    coverUrl: /photos/tea-glass.webp
+    coverAlt: 冷泡茶饮产品细节实拍，品质详情模板预览
+
+  - id: tpl-young-share
+    title: 这一口福建味，有点上头
+    description: 传统风味也可以很年轻，用轻快表达触达年轻受众。
+    scene: 品牌故事
+    style: 年轻潮流
+    channelIds: [douyin, pengyouquan]
+    promptExample: 保留产品真实特点，用轻快不浮夸的语气生成短视频开场、字幕和朋友圈分享文案。
+    coverUrl: /photos/tea-cup.webp
+    coverAlt: 茶汤和茶杯生活方式实拍，年轻化分享模板预览
+
+assets:
+  - id: sample-green-plant
+    name: 茶园绿植
+    size: 2097152
+    type: image
+    url: /photos/green-plant.webp
+    source: sample
+    createdAt: 2026-08-01T09:00:00.000Z
+  - id: sample-tea-cup
+    name: 茶汤茶杯
+    size: 2097152
+    type: image
+    url: /photos/tea-cup.webp
+    source: sample
+    createdAt: 2026-08-01T09:01:00.000Z
+  - id: sample-tea-glass
+    name: 冷泡茶饮
+    size: 2097152
+    type: image
+    url: /photos/tea-glass.webp
+    source: sample
+    createdAt: 2026-08-01T09:02:00.000Z
+  - id: sample-tea-light
+    name: 茶园晨光
+    size: 2097152
+    type: image
+    url: /photos/tea-light.webp
+    source: sample
+    createdAt: 2026-08-01T09:03:00.000Z
+
+demo_projects:
+  - id: demo-project-001
+    title: 白茶新品上市
+    channels: [douyin, pengyouquan]
+    createdAt: 2026-08-05T10:20:00.000Z
+    coverUrl: null
+    prompt: 围绕福鼎白茶新品上市，输出一条抖音短视频文案：突出高山茶园产地、鲜爽回甘卖点，口语化、带话题标签。
+    assets:
+      - id: sample-tea-cup
+        name: 茶汤茶杯
+    results:
+      - channelId: douyin
+        text: 你喝过会“回甘”的茶吗？这杯福鼎白茶，来自千米高山茶园，一口鲜爽，满口花香！＃福鼎白茶 ＃助农好茶
+        posterUrl: null
+      - channelId: pengyouquan
+        text: 今天开箱的高山白茶，茶汤透亮、回甘持久，自己试喝一周才敢推荐。想尝尝的朋友私信我～
+        posterUrl: null
+    quotaCost: 200
+
+  - id: demo-project-002
+    title: 丰收节活动宣传
+    channels: [shipinhao]
+    createdAt: 2026-08-06T15:40:00.000Z
+    coverUrl: null
+    prompt: 为助农丰收节活动写一条视频号文案：真实故事化叙述，突出农户与丰收场景，结尾引导点赞转发。
+    assets:
+      - id: sample-green-plant
+        name: 茶园绿植
+    results:
+      - channelId: shipinhao
+        text: 这片茶园的主人，守了三十年。今年丰收节，他想让更多人尝尝家乡的味道。点个赞，为农人加油！
+        posterUrl: null
+    quotaCost: 100
+
+demo_accounts:
+  # 演示账号密码均使用 AES-256 加密存储（demo-password：123456）
+  - id: mvp-admin
+    username: admin
+    password_encrypted: U2FsdGVkX19zHReS15AtLNA1CTJGr1G3aOkybuxjAmc=
+    name: 云溪县融媒体中心
+    role: 县融媒体运营
+    organization: null
+    phone: '13800000001'
+  - id: mvp-user
+    username: user
+    password_encrypted: U2FsdGVkX19zHReS15AtLNA1CTJGr1G3aOkybuxjAmc=
+    name: 林晓
+    role: 内容创作者
+    organization: 福鼎市乡村振兴服务中心
+    phone: '13800000002'
+  - id: mvp-media
+    username: media
+    password_encrypted: U2FsdGVkX19zHReS15AtLNA1CTJGr1G3aOkybuxjAmc=
+    name: 王芳
+    role: 融媒体运营
+    organization: 福鼎市融媒体中心
+    phone: '13800000003'
+
+creation_scenarios:
+  - id: tea-launch
+    title: 春茶上市推广
+    description: 快速生成一套新品上市内容，突出时令、口感和产地。
+    eyebrow: 新品上市
+    color: '#168c61'
+    channels: [douyin, shipinhao, pengyouquan]
+    outputTypes: [copy, voiceover]
+    assetPolicy: recommended
+    assetHint: 有产品图会更有画面感，没有也可以先生成文案
+    promptTemplate: 围绕春茶上市，突出当季新采、口感清甜与产地直发，输出真实克制的助农推广内容。
+    templateId: tpl-tea-launch
+  - id: moments
+    title: 朋友圈宣传
+    description: 适合日常发圈，快速整理一段亲切可信的产品分享。
+    eyebrow: 日常分享
+    color: '#3f51d7'
+    channels: [pengyouquan]
+    outputTypes: [copy]
+    assetPolicy: optional
+    assetHint: 可不上传图片，先把想表达的卖点说清楚
+    promptTemplate: 生成一段适合朋友圈的产品分享文案，用第一人称表达真实体验，避免夸大功效。
+  - id: short-video
+    title: 短视频口播稿
+    description: 从开场钩子到行动号召，生成一条可直接拍摄的口播脚本。
+    eyebrow: 短视频
+    color: '#e07a32'
+    channels: [douyin, shipinhao]
+    outputTypes: [voiceover, storyboard]
+    assetPolicy: recommended
+    assetHint: 上传实拍图后，可自动补充镜头和字幕建议
+    promptTemplate: 生成一条30秒以内的短视频口播稿，包含开场钩子、三条卖点和明确的行动号召。
+  - id: poster
+    title: 产品海报
+    description: 把产品图片和核心卖点整理成一张发布用海报。
+    eyebrow: 视觉物料
+    color: '#b45678'
+    channels: [pengyouquan, shipinhao]
+    outputTypes: [poster]
+    assetPolicy: required
+    assetHint: 至少上传1张产品或产地图片
+    promptTemplate: 将产品核心卖点整理成一张信息清楚、可信克制的产品海报。
+  - id: county-brand
+    title: 县域品牌宣传
+    description: 适合政府单位和品牌团队，统一输出正式、可信的传播内容。
+    eyebrow: 品牌传播
+    color: '#7654a5'
+    channels: [shipinhao, pengyouquan]
+    outputTypes: [article, copy]
+    assetPolicy: recommended
+    assetHint: 可补充县域、基地和品牌素材，便于内容更准确
+    promptTemplate: 围绕县域公用品牌，突出产地、产业和真实人物，生成正式可信的品牌传播内容。
+
+output_types:
+  - id: copy
+    label: 社媒文案
+    description: 朋友圈、视频号和抖音文案
+    icon: ChatDotRound
+    needsImage: false
+  - id: article
+    label: 图文长文
+    description: 适合公众号或详情页
+    icon: Document
+    needsImage: false
+  - id: voiceover
+    label: 口播稿
+    description: 短视频出镜或配音台词
+    icon: Microphone
+    needsImage: false
+  - id: poster
+    label: 产品海报
+    description: 根据素材整理卖点版式
+    icon: Picture
+    needsImage: true
+  - id: grid
+    label: 九宫格
+    description: 一组可连续发布的图片内容
+    icon: Grid
+    needsImage: true
+  - id: storyboard
+    label: 短视频分镜
+    description: 镜头、字幕和动作建议
+    icon: VideoPlay
+    needsImage: false

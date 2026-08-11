@@ -1,0 +1,64 @@
+﻿:root {
+  color-scheme: dark;
+  --color-page: #f7f8fb;
+  --color-surface: #ffffff;
+  --color-surface-soft: #f3f4f8;
+  --color-ink: #151722;
+  --color-ink-secondary: #343846;
+  --color-muted: #697081;
+  --color-border: #e3e5ec;
+  --color-primary: #3f51d7;
+  --color-primary-hover: #3343bc;
+  --color-primary-soft: #eef0ff;
+  --color-hero: #5149df;
+  --color-brand: #168c61;
+  --color-brand-ink: #0d6d49;
+  --color-brand-soft: #e9f6f0;
+  --color-danger: #d64545;
+  --motion-fast: 180ms;
+  --header-height: 56px;
+  --tabbar-height: 60px;
+  --page-pad: 16px;
+  --el-color-primary: var(--color-primary);
+  --el-color-primary-light-3: #6774e4;
+  --el-color-primary-light-5: #929bee;
+  --el-color-primary-light-7: #bfc5f5;
+  --el-color-primary-light-9: #eef0ff;
+  --el-color-primary-dark-2: var(--color-primary-hover);
+  --el-border-radius-base: 8px;
+  --el-font-family: "Microsoft YaHei UI", "PingFang SC", "Noto Sans CJK SC", "Segoe UI", sans-serif;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --color-page: #f4f7f3;
+  --color-surface: #ffffff;
+  --color-surface-soft: #eaf1eb;
+  --color-ink: #17352a;
+  --color-ink-secondary: #365847;
+  --color-muted: #6b8175;
+  --color-border: #d9e6dc;
+  --color-primary: #2b7a55;
+  --color-primary-hover: #216644;
+  --color-primary-soft: #e5f2e9;
+  --color-hero: #2b7a55;
+  --color-brand: #2b7a55;
+  --color-brand-ink: #1f6344;
+  --color-brand-soft: #e3f1e8;
+  --color-danger: #c94e4e;
+  --el-color-primary: var(--color-primary);
+  --el-color-primary-light-3: #5e9c7b;
+  --el-color-primary-light-5: #8bbba0;
+  --el-color-primary-light-7: #b8d7c3;
+  --el-color-primary-light-9: #e5f2e9;
+  --el-color-primary-dark-2: var(--color-primary-hover);
+  --el-bg-color: #ffffff;
+  --el-bg-color-page: #f4f7f3;
+  --el-fill-color-blank: #ffffff;
+  --el-fill-color-light: #eef4ef;
+  --el-text-color-primary: #17352a;
+  --el-text-color-regular: #365847;
+  --el-text-color-secondary: #6b8175;
+  --el-border-color: #d9e6dc;
+  --el-border-color-light: #e7efe8;
+}

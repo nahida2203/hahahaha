@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">真实产地模板封面</title>
+  <desc id="desc">浅绿背景上的草帽、田垄与太阳</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e9f5e3"/>
+      <stop offset="1" stop-color="#8fce7f"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <circle cx="470" cy="112" r="32" fill="#ffd76e"/>
+  <ellipse cx="300" cy="196" rx="112" ry="34" fill="#f6e7b8"/>
+  <path d="M240 196 q60 -74 120 0 z" fill="#eccf8f"/>
+  <rect x="248" y="196" width="104" height="12" rx="6" fill="#c94f3d" opacity="0.85"/>
+  <path d="M0 330 h600" stroke="#4c8c3f" stroke-width="9" stroke-dasharray="24 20" opacity="0.65"/>
+  <path d="M0 372 h600" stroke="#4c8c3f" stroke-width="9" stroke-dasharray="24 20" opacity="0.65"/>
+  <text x="300" y="315" text-anchor="middle" font-family="&quot;PingFang SC&quot;,&quot;Microsoft YaHei UI&quot;,&quot;Noto Sans CJK SC&quot;,sans-serif" font-size="30" font-weight="700" letter-spacing="6" fill="#35682c">产地故事</text>
+</svg>
